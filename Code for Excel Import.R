@@ -165,7 +165,6 @@ levels(my_df$A216_04_2) <- c("No", "Yes")
 my_df$A216_04_3 <- as.factor(my_df$A216_04_3)
 levels(my_df$A216_04_3) <- c("No", "Yes")
 
-
 my_df$A216_05_1 <- as.factor(my_df$A216_05_1)
 levels(my_df$A216_05_1) <- c("No", "Yes")
 
@@ -304,15 +303,4 @@ comment(my_df$MISSING) = "Anteil fehlender Antworten in Prozent"
 comment(my_df$MISSREL) = "Anteil fehlender Antworten (gewichtet nach Relevanz)"
 comment(my_df$TIME_RSI) = "Maluspunkte für schnelles Ausfüllen"
 comment(my_df$DEG_TIME) = "Maluspunkte für schnelles Ausfüllen"
-
-
-
-names(my_df) <- my_df[1,]
-
-my_df <- my_df[-1,]
-
-
-
-df <- read.csv(file = "H:\\Meta-Rep\\Inhaltsanalyse Auswertung\\Data\\data_MetaRep_merged with ICR_1_CSV.csv", sep = ",", encoding="UTF-8")
-
 
